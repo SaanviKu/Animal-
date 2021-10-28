@@ -1,0 +1,37 @@
+body{
+    font-family: cursive;
+    background: rgb(248, 129, 188);
+}
+
+.header_div{
+    background: rgb(158, 217, 236);
+    color: rgb(211, 110, 236);
+}
+
+.header_div p{
+    font-family:sans-serif;
+    color: rgb(0, 4, 255);
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main_div button{
+    font-family: monospace;
+    margin-top: 30px;
+    width: 130px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.copy_right_footer{
+    position: fixed;
+    color: rgb(20, 240, 0);
+    bottom: 0;
+    width: 100%;
+    font-size: 18px;
+    background-color: rgb(12, 16, 219);
+    line-height: 3;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgb(rgb(247, 125, 125), rgb(5, 255, 5), rgb(91, 91, 235));
+}
