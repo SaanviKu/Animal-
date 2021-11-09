@@ -1,7 +1,7 @@
 function startClassification()
 {
     navigator.mediaDevices.getUserMedia({audio:true});
-    classifier=ml5.soundClassifier("https://teachablemachine.withgoogle.com/models/Q5bpfvJjA/",modelReady);
+    classifier=ml5.soundClassifier("https://teachablemachine.withgoogle.com/models/Q5bpfvJjA/model.json",modelReady);
 }
 
 function modelReady()
@@ -32,22 +32,22 @@ function gotResults(error, results) {
         img2 = document.getElementById('animal3');
         img3 = document.getElementById('animal4');
 
-        if (results[0].label == "Bang") {
+        if (results[0].label == "Dog") {
             img.src = 'basti-01.gif';
             img1.src = 'download-02.png';
             img2.src = 'images-03.jpg';
             img3.src = 'images-04.png';
-        } else if (results[0].label == "Knock") {
+        } else if (results[0].label == "Cat") {
             img.src = 'download-01.jpg';
             img1.src = 'mochi-mochi-peach-cat-meow-02.gif';
             img2.src = 'images-03.jpg';
             img3.src = 'images-04.png';
-        } else if (results[0].label == "Snap") {
+        } else if (results[0].label == "Bird") {
             img.src = 'download-01.jpg';
             img1.src = 'download-02.png';
             img2.src = 'kukek-03.gif';
             img3.src = 'images-04.png';
-        } else{
+        } else{ (results[0].label == "Tiger")
             img.src = 'download-01.jpg';
             img1.src = 'download-02.png';
             img2.src = 'images-03.jpg';
